@@ -1,0 +1,67 @@
+.root-center {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+	@include mobile {
+		height: 568px;
+	}
+
+	&__wrapper {
+		text-align: center;
+		max-width: 888px;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+		font-family: var(--font-family-title);
+		font-weight: 400;
+		font-size: 56px;
+		line-height: 66px;
+
+		@include mobile {
+			margin-bottom: 24px;
+			font-size: 24px;
+			line-height: 28px;
+		}
+	}
+
+	&__sub-title {
+		max-width: 700px;
+		margin: 0 auto 58px;
+		font-size: 26px;
+		line-height: 30px;
+		font-weight: 300;
+
+		@include mobile {
+			margin-bottom: 24px;
+			font-size: 16px;
+			line-height: 18px;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+
+		@include desktop-up {
+			gap: 20px;
+		}
+
+		button {
+			@include mobile {
+				margin: 0;
+
+				&:first-child {
+
+				}
+			}
+		}
+	}
+}

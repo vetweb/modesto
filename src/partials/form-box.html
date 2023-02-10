@@ -1,0 +1,74 @@
+<div class="form-box">
+    <div class="bg-img">
+        <picture>
+            <source srcset="/img/bg-form-mobile.png" media="(max-width: 767px)">
+            <source srcset="/img/bg-form-tablet.png" media="(max-width: 1024px)">
+            <source srcset="/img/bg-form.png" media="(min-width: 1025px)">
+            <img src="/img/bg-form.png"
+                 class="image bg-img__img"
+                 loading="lazy" alt="">
+        </picture>
+    </div>
+    <div class="container">
+        <div class="form-box__wrapper">
+            <div class="form-box__col-info">
+                <div class="form-box__title">
+                    Заполните форму и начните развивать свой бизнес прямо сейчас!
+                </div>
+                <div class="form-box__description">
+                    Регистрация на нашем сайте занимает несколько минут, просим ответить на все вопросы полностью и
+                    корректно! После подтверждения регистрации вы попадёте в систему, где большинство процессов
+                    автоматизированы, что сэкономит ваше время и деньги!
+                </div>
+            </div>
+            <div class="form-box__col-form">
+                <div class="form">
+                    <form action="" class="form__actions js-form">
+                        <div class="form__wrapper">
+                            <div class="form__col">
+                                <div class="form__item">
+                                    <label for="fio" class="form__label">Ваше имя</label>
+                                    <input type="text" class="form__input name" id="fio" required placeholder="Ваше имя">
+                                </div>
+                                <div class="form__item">
+                                    <label for="company" class="form__label">Название Компании</label>
+                                    <input type="text" class="form__input" id="company" required placeholder="Название Компании">
+                                </div>
+                                <div class="form__item">
+                                    <label for="email" class="form__label">E-mail</label>
+                                    <input type="email" class="form__input email" id="email"  required placeholder="E-mail">
+                                </div>
+                            </div>
+                            <div class="form__col">
+                            <div class="form__item">
+                                <label for="phone" class="form__label">Номер телефона</label>
+                                <input type="tel" class="form__input" id="phone" required placeholder="Номер телефона">
+                            </div>
+                            <div class="form__item">
+                                <label for="promo" class="form__label">Промокод</label>
+                                <input type="text" class="form__input" id="promo" placeholder="Промокод">
+                            </div>
+                            <div class="form__item form__item-button">
+                                <button class="button">
+                                    <span class="button__content">Далее</span>
+                                </button>
+                            </div>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-overlay"></div>
+<div class="modal fixed-block">
+    <div class="modal__wrapper">
+        <div class="">
+            <div class="modal__title">Ваша заявка успешно отправлена</div>
+            <button class="button js-close-modal">
+                <span class="button__content">Закрыть</span>
+            </button>
+        </div>
+    </div>
+</div>

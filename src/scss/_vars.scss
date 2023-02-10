@@ -1,0 +1,30 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Raleway", sans-serif;
+  --font-family-title: 'Marmelad', sans-serif;
+  --font-number: 'Roboto', sans-serif;
+  --content-width: 1420px;
+  --container-offset: 20px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --icon-stroke-width: 1px;
+  --icon-color: blue;
+  --icon-size: 1.5rem;
+  --icon-cursor: inherit;
+
+  // colors
+  --white: #fff;
+  --light: #FFFBED;
+  --black: #000;
+  --brown: #372E11;
+  --gold: #FFE182;
+  --gold-lighter: #FFF8E1;
+  --blue: #EDEDED;
+  --currentText: var(--brown);
+  --brown-lighter: #8E825C;
+
+  //sizes
+  --size-def: 18px;
+  --br-rd: 12px;
+}

@@ -1,0 +1,77 @@
+.form {
+	width: 320px;
+	margin-top: 32px;
+
+	@include tablet {
+		width: 100%;
+		margin-top: 32px;
+	}
+
+	@include desktop-up {
+		margin-top: 0;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	&__wrapper {
+		@include tablet-up {
+			display: flex;
+			margin: 0 -20px;
+		}
+
+		@include desktop-up {
+			margin: 0;
+			display: block;
+		}
+	}
+
+	&__col {
+		@include tablet-up {
+			width: 50%;
+			flex: 0 0 auto;
+			padding: 0 20px;
+		}
+
+		@include desktop-up {
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			display: block;
+		}
+	}
+
+	&__label {
+		display: block;
+		margin-bottom: 10px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	&__item {
+		margin-bottom: 20px;
+	}
+
+	&__item-button {
+		margin-top: 40px;
+
+		.button {
+			width: 100%;
+		}
+	}
+
+	&__input {
+		width: 100%;
+		border: 0;
+		padding: 15px 8px;
+		border-radius: 6px;
+		background: var(--gold-lighter);
+		font-size: 14px;
+		line-height: 16px;
+		color: var(--brown-lighter);
+		&:focus {
+			outline: none;
+		}
+	}
+}

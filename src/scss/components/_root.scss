@@ -1,0 +1,52 @@
+.root {
+	position: relative;
+	height: 100vh;
+	max-height: 1080px;
+
+	@include mobile {
+		height: auto;
+	}
+
+	&__bg {
+		position: absolute;
+		transition: all .8s ease;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		visibility: hidden;
+		opacity: 0;
+
+		&.show {
+			visibility: visible;
+			opacity: 1;
+		}
+
+		&--flower {
+			width: 525px;
+			height: 600px;
+			left: 0;
+			bottom: -200px;
+			transition-delay: .6s;
+			background-image: url('/img/bg-flower.png');
+			transform: translateY(-100px);
+
+			&.show {
+				transform: translateY(0);
+			}
+		}
+
+		&--flower2 {
+			width: 500px;
+			height: 400px;
+			right: 0;
+			bottom: 0;
+			transition-delay: .8s;
+			background-image: url('/img/bg-flower-2.png');
+			transform: translateY(100px);
+
+			&.show {
+				transform: translateY(0);
+			}
+		}
+	}
+}

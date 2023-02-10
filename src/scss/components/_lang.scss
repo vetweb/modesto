@@ -1,0 +1,23 @@
+.lang {
+	display: flex;
+	margin-right: 13px;
+
+	@include desktop-up {
+		display: none;
+	}
+
+	&__item {
+		padding: 0 5px;
+	}
+
+	&__link {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 19px;
+		color: var(--currentText);
+
+		.lang__item--active & {
+			color: #9B9B99;
+		}
+	}
+}

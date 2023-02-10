@@ -1,0 +1,61 @@
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	padding: 0 30px;
+	border: none;
+	cursor: pointer;
+	font-weight: 600;
+	color: var(--currentText);
+	font-size: var(--size-def);
+	background: var(--gold);
+	border-radius: var(--br-rd);
+	transition: all .3s ease;
+
+	&:hover {
+		transform: scale(1.05,1.05);
+	}
+
+	&--bigger {
+		height: 65px;
+		padding: 0 34px;
+
+		@include mobile {
+			height: 43px;
+			padding: 0 13px;
+			font-size: 16px;
+		}
+	}
+
+	&--bigger-accent {
+		height: 69px;
+		padding: 0 42px;
+
+		@include mobile {
+			height: 43px;
+			padding: 0 13px;
+			font-size: 16px;
+		}
+	}
+
+	&--inner {
+		background: var(--blue);
+	}
+
+	&--empty-border {
+		border: 1px solid var(--black);
+		background: none;
+		font-weight: 500;
+	}
+
+	&--empty {
+		font-weight: 500;
+		background: none;
+	}
+
+	&__icon {
+		margin-left: 12px;
+	}
+}

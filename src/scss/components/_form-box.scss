@@ -1,0 +1,72 @@
+.form-box {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 200px 0;
+
+	@include tablet {
+		padding: 40px 0;
+	}
+
+	@include mobile {
+		padding: 20px 0;
+	}
+
+	&__wrapper {
+		position: relative;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		max-width: 1140px;
+		padding: 80px;
+		background: var(--light);
+		margin: 0 -40px;
+		z-index: 1;
+
+		@include tablet {
+			display: block;
+			margin: 0;
+			padding: 32px;
+		}
+
+		@include mobile {
+			padding: 20px;
+		}
+	}
+
+	&__col-info {
+		max-width: 580px;
+		padding: 0	40px;
+		flex: 0 0 auto;
+	}
+
+
+	&__col-form {
+		padding: 0	40px;
+		flex: 0 0 auto;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+		font-family: var(--font-family-title);
+		font-size: 36px;
+		line-height: 43px;
+
+		@include mobile {
+			margin-bottom: 32px;
+			font-size: 24px;
+			line-height: 29px;
+		}
+	}
+
+	&__description {
+		font-size: 18px;
+		line-height: 21px;
+
+		@include mobile {
+			font-size: 16px;
+			line-height: 19px;
+		}
+	}
+}

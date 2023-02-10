@@ -1,0 +1,14 @@
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	cursor: var(--icon-cursor, inherit);
+	height: var(--icon-size, 1.5rem);
+	width: var(--icon-size, 1.5rem);
+	min-height: var(--icon-size, 1.5rem);
+	min-width: var(--icon-size, 1.5rem);
+	margin: var(--icon-margin, 0);
+	fill: currentcolor;
+	stroke: currentcolor;
+	stroke-width: var(--icon-stroke-width, 1px);
+}

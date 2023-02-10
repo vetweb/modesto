@@ -1,0 +1,21 @@
+.top-menu {
+	margin: 0 auto;
+
+	@include tablet {
+		display: none;
+	}
+
+	&__list {
+		@include flex-all-center;
+		margin: 0 -20px;
+	}
+
+	&__item {
+		padding: 0 20px;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: #000;
+	}
+}
